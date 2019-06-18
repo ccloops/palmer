@@ -1,7 +1,43 @@
 body {
   font-family: 'Lekton';
+  background-color: #EEEFEA;
+  margin: 0;
 }
 
 .nav:hover {
   color: rgb(255, 77, 106);
 }
+
+nav {
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  line-height: 3em;
+  padding: 1em 3em;
+}
+
+nav ul li:first-child {
+  background-color: #FEB29B;
+  margin-right: auto;
+  object-fit: contain;
+  height: 5em;
+  width: 5em;
+  line-height: 5em;
+  text-align: center;
+}
+
+/* color to consider: background-color: #E8F3EE; */
+/* color: #238189; */
