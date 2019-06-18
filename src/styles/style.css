@@ -1,3 +1,7 @@
 body {
-  color: red;
+  font-family: 'Lekton';
+}
+
+.nav:hover {
+  color: rgb(255, 77, 106);
 }
