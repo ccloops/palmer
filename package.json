@@ -1,0 +1,54 @@
+{
+  "name": "palmer",
+  "version": "1.0.0",
+  "description": "Palmer Kennedy Painting",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "watch": "parcel watch index.html",
+    "start": "parcel build index.html && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccloops/palmer.git"
+  },
+  "keywords": [
+    "Palmer",
+    "Kennedy",
+    "Painting",
+    "React"
+  ],
+  "author": "Catherine Looper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccloops/palmer/issues"
+  },
+  "homepage": "https://github.com/ccloops/palmer#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "styled-components": "^4.3.1",
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0"
+  }
+}
