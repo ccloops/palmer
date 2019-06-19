@@ -55,9 +55,9 @@ export default class App extends Component {
     jobs: [],
   };
 
-  viewJob() {
+  // viewJob(id) {
 
-  }
+  // }
 
   render() {
     return (

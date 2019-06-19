@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #527590;
+  background-color: #CDDCDF;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -16,8 +16,6 @@ const Container = styled.div`
 
 const Jobs = () => (
   <Container>
-    <Job />
-    <Job />
     <Job />
     <Job />
     <Job />
