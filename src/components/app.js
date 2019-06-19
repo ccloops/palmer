@@ -22,6 +22,12 @@ const Container = styled.div`
   //     rgba(0,0,0,1) 50%,
   //     rgba(0,0,0,0) calc(50% + 0.8px),
   //     rgba(0,0,0,0) 100%);
+
+    @media(max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
 `;
 
 const HorizontalRow = styled.hr`
@@ -33,21 +39,31 @@ const HorizontalRow = styled.hr`
 
 const TitleOne = styled.h1`
   font-size: 3em;
-  // background-color: black;
-  // color: white;
   line-height: 3em;
+    @media(max-width: 768px) {
+      font-size: 2em;
+      text-align: center;
+    }
 `;
 
 const TitleTwo = styled.h1`
   color: #527590;
   font-size: 3em;
   line-height: 3em;
+    @media(max-width: 768px) {
+      font-size: 1em;
+      text-align: center;
+      line-height: 1em;
+    }
 `;
 
 const Image = styled.img`
   display: inline;
   width: 8em;
   height: 8em;
+    @media(max-width: 768px) {
+      display: none;
+    }
 `;
 
 export default class App extends Component {

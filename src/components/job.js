@@ -15,6 +15,10 @@ const Container = styled.div`
       transform: scale(1.01);
       box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
     }
+
+    @media(max-width: 768px) {
+      margin: 2em auto;
+    }
 `;
 
 const Title = styled.h3`
