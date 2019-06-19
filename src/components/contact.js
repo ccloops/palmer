@@ -27,6 +27,8 @@ const HorizontalRow = styled.hr`
 const Form = styled.form`
   margin: 0 auto;
   width: 50%;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
+  padding: 3em 2em;
 `;
 
 const TextField = styled.input`
@@ -55,7 +57,7 @@ const SubmitButton = styled.button`
 const Contact = () => (
   <div>
     <SectionHeader>
-      <Title>Interested in a consultation?</Title> 
+      <Title>Interested in a consultation?</Title>
       <SubTitle>We would love to help you achieve your paint goals</SubTitle>
     </SectionHeader>
     <HorizontalRow />
