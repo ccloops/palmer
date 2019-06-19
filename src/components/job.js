@@ -15,12 +15,25 @@ const Container = styled.div`
       transform: scale(1.01);
       box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
     }
+
+    @media(max-width: 768px) {
+      margin: 2em auto;
+    }
 `;
 
 const Title = styled.h3`
-  text-align: center;
-  margin-top: 3em;
-  color: #F2E1CD;
+  font-size: 1.2em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+  color: darkSlateGray;
+`;
+
+const Description = styled.p`
+  font-size: 1em;
+  margin-left: 0.5em;
+  margin-bottom: 2.5em;
+  color: darkSlateGray;
 `;
 
 const Image = styled.img`
@@ -33,7 +46,8 @@ const Image = styled.img`
 const Job = () => (
   <Container>
     <Title>Katherine</Title>
-    <Image src={Katherine} />
+    <Description>Very cool project I did</Description>
+    <Image src={Katherine} alt="Katherine" />
   </Container>
 );
 
