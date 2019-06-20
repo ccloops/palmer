@@ -69,11 +69,18 @@ const Image = styled.img`
 export default class App extends Component {
   state = {
     jobs: [],
+    name: '',
+    email: '',
+    message: ''
   };
 
   // viewJob(id) {
 
   // }
+
+  handleNameChange(event) {
+    console.log(event);
+  }
 
   render() {
     return (
