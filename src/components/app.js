@@ -74,14 +74,6 @@ export default class App extends Component {
     message: ''
   };
 
-  // viewJob(id) {
-
-  // }
-
-  handleNameChange(event) {
-    console.log(event);
-  }
-
   render() {
     return (
       <div>

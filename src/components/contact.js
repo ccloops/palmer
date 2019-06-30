@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const SectionHeader = styled.section`
@@ -54,20 +54,84 @@ const SubmitButton = styled.button`
   font-size: 1em;
 `;
 
-const Contact = () => (
-  <div>
-    <SectionHeader>
-      <Title>Interested in a consultation?</Title>
-      <SubTitle>We would love to help you achieve your paint goals</SubTitle>
-    </SectionHeader>
-    <HorizontalRow />
-    <Form>
-      <TextField type="text" placeholder="Enter your name" />
-      <TextField type="text" placeholder="Enter your email" />
-      <TextArea rows="4" cols="50" placeholder="Tell us about your project. How can we help?" />
-      <SubmitButton type="submit" value="Submit">Send Message</SubmitButton>
-    </Form>
-  </div>
-);
+export default class Contact extends Component {
+  state = {
+    jobs: [],
+    name: '',
+    job: {
+      name: '',
+      email: '',
+      message: ''
+    },
+    email: '',
+    message: ''
+  };
 
-export default Contact;
+  handleChange = (event) => {
+    const { name, value } = event.target;
+
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    this.setState({
+      job: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+      },
+    });
+  };
+
+  render() {
+    const { handleSubmit } = this;
+    console.log('this.state', this.state);
+    return (
+
+      <div>
+        <SectionHeader>
+          <Title>Interested in a consultation?</Title>
+          <SubTitle>We would love to help you achieve your paint goals</SubTitle>
+        </SectionHeader>
+        <HorizontalRow />
+        <Form onSubmit={
+          handleSubmit
+        }
+        >
+          <TextField
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+          <TextField
+            type="text"
+            placeholder="Enter your email"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+          <TextArea
+            rows="4"
+            cols="50"
+            placeholder="Tell us about your project. How can we help?"
+            name="message"
+            value={this.state.message}
+            onChange={this.handleChange}
+          />
+          <SubmitButton
+            type="submit"
+            value="Submit"
+          >
+          Send Message
+          </SubmitButton>
+        </Form>
+      </div>
+    );
+  }
+}
