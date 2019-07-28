@@ -33,17 +33,34 @@ const Form = styled.form`
 
 const TextField = styled.input`
   border: green;
-  margin: 1em;
+  margin-top: 1em;
   font-family: 'Lekton';
   font-size: 1.5em;
+
+    @media(max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      font-size: 1em;
+    }
 `;
 
 const TextArea = styled.textarea`
   border: red;
-  margin: 1em;
-  display: block;
+  margin-top: 1em;
   font-family: 'Lekton';
   font-size: 1.5em;
+
+    @media(max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: left;
+      width: 100%;
+      font-size: 1em;
+    }
 `;
 
 const SubmitButton = styled.button`
@@ -52,6 +69,7 @@ const SubmitButton = styled.button`
   font-family: 'Lekton';
   padding: 0.5em;
   font-size: 1em;
+  margin-top: 1em;
 `;
 
 export default class Contact extends Component {
@@ -108,6 +126,7 @@ export default class Contact extends Component {
             name="name"
             value={this.state.name}
             onChange={this.handleChange}
+            required
           />
           <TextField
             type="text"
@@ -115,6 +134,7 @@ export default class Contact extends Component {
             name="email"
             value={this.state.email}
             onChange={this.handleChange}
+            required
           />
           <TextArea
             rows="4"
@@ -123,6 +143,7 @@ export default class Contact extends Component {
             name="message"
             value={this.state.message}
             onChange={this.handleChange}
+            required
           />
           <SubmitButton
             type="submit"
