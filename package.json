@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/ccloops/palmer#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "parcel-bundler": "^1.12.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
